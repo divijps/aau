@@ -1,0 +1,12 @@
+header {
+	width:1024px;
+	height:150px;
+	background: #367;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+header > h1 {
+	color:#fff;
+	margin: 20px 0px 0px 40px;
+}
