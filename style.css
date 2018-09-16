@@ -95,6 +95,10 @@ article {
 	height: auto;
 }
 
+.gallery-link li{
+	display:inline;
+}
+
 
 
 article > h1 {
