@@ -19,13 +19,35 @@ body {
 header {
 	background: black;
 	margin: 0px auto;
+	height: auto;
 	overflow: hidden;
 }
+
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	margin-top: 20px;
+	-webkit-animation-name: logoup;
+	-webkit-animation-duration: 3s;
+}
+
+@keyframes logoup{
+	0% {opacity: 0; width: 50%;}
+	25% {opacity: 2.5; }
+	50% {opacity: 5.0; }
+	75% {opacity: 7.5; }
+	100% {opacity: 1; width: 30%;}
+}
+
+
 
 h1,h2,h3,h3,h5,h6 {
 	font-family: 'Archivo Black', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
+
 }
 
 p {
@@ -48,9 +70,19 @@ header > h1 {
 nav {
 	font-size: 1.6em;
 	margin: 0px auto;
-	width: 700px;
-	padding: 0px 0px 0px 10px;
+	width: 650px;
+	padding: 0px 0px 10px 0px;
 	font-family: 'Archivo Black', sans-serif;
+	-webkit-animation-name: navup;
+	-webkit-animation-duration: 5s;
+}
+
+@keyframes navup{
+	0% {opacity: 0; padding: 0px 0px 50px 0px;}
+	25% {opacity: 2.5;}
+	50% {opacity: 5.0;}
+	75% {opacity: 7.5;}
+	100% {opacity: 1; padding: 0px 0px 10px 0px;}
 }
 
 nav li {
@@ -59,7 +91,7 @@ nav li {
 
 nav a:link, nav a:active, nav a:visited {
 	color: #fff;
-	background: #FF0000;
+
 	padding: 5px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -67,9 +99,7 @@ nav a:link, nav a:active, nav a:visited {
 
 }
 
-img {
-	 width: 100%;
-}
+
 
 nav a:hover {
 	color: #333;
@@ -80,6 +110,21 @@ nav a:hover {
 	position: relative;
 	text-align: center;
 	color: white;
+	-webkit-animation-name: loadup;
+	-webkit-animation-duration: 5s;
+	opacity: 1;
+}
+
+@keyframes loadup{
+	0% {opacity: 0;}
+	25% {opacity: 2.5;}
+	50% {opacity: 5.0;}
+	75% {opacity: 7.5;}
+	100% {opacity: 1;}
+}
+
+.landing-main img{
+	width: 100%;
 }
 
 .landing-text {
@@ -91,9 +136,8 @@ font-size: 4.0em;
 }
 
 article {
-	
 	margin: 0px auto;
-	width: 90%;
+	width: 80%;
 	height: auto;
 }
 
@@ -104,50 +148,45 @@ article > h1 {
 }
 
 article > p {
-	font-size: 1.6em;
+	font-size: 2.0em;
 }
 
-/*aside {
-	float: right;
-	margin: 0px 0px 0px 40px;
-	width: 30%;
-	height: 450px;
-	background: red;
-	height: auto;
+#about-link p{
+	text-align: center;
 }
 
-aside > h1 {
-	color: black;
-	margin: 20px 0px 0px 20px;
-	font-size: 2.4em;
-}
-
-aside > p {
-	color: black;
-	font-size: 1.6em;
-	padding: 10px;
-	margin: 20px;
-
-} */
-
-#gallery-link ul{
+.gallery ul{
 list-style-type: none;
+float: left;
 }
 
-#gallery-link img{
-	width:50%;
+.gallery img{
+	width:30%;
+	height: auto;
+	margin: 3px 3px 3px 3px;
 	float: left;
+	opacity: 0.7;
 }
 
+
+.gallery img:hover {
+	opacity: 1;
+}
+
+
+.tour-dates{
+	width: 100%;
+	margin: 0px auto;
+}
 
 .tour-dates li {
-	display: inline;
-	float: left;
+	list-style-type: none;
+float: left;
 	margin: 1%;
 	color: #fff;
-	background: black;
+	background: darkred;
 	padding: 0px 20px 5px 20px;
-	font-size: 130%;
+	font-size: 1.6em;
 	text-align: center;
 	line-height: 1em;
 }
@@ -163,10 +202,27 @@ list-style-type: none;
 	height: 3%;
 	background: black;
 	float: left;
+	display: block;
+	align-content: center;
 }
 footer {
-	float: right;
-	margin: 1% 5% 1% 2%;
+	padding: 1% 1% 1% 1%;
 	overflow: hidden;
 	color: white;
+	text-align: center;
 }
+
+footer p{
+		font-family: 'Archivo Black', sans-serif;
+}
+
+footer a{
+	color: #fff;
+	background: darkred;
+	padding: 5px 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.6em;
+	font-family: 'Archivo Black', sans-serif;
+}
+
