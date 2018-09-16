@@ -1,12 +1,161 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #eee;
+	font-size: 62.5%;
+
+}
+
+.header-wrap {
+	width: 100%;
+	height: auto;
+	background: black;
+}
+
 header {
-	width:1024px;
-	height:150px;
-	background: #367;
+	background: black;
 	margin: 0px auto;
 	overflow: hidden;
 }
 
+h1,h2,h3,h3,h5,h6 {
+	font-family: 'Archivo Black', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+section {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+}
+
 header > h1 {
-	color:#fff;
-	margin: 20px 0px 0px 40px;
+	color:white;
+	margin: 20px 0px 20px 40px;
+	font-size: 4.6em;
+
+}
+
+nav {
+	font-size: 1.6em;
+	margin: 0px 40px 20px 0px;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a:link, nav a:active, nav a:visited {
+	color: #fff;
+	background: #FF0000;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.6em;
+
+}
+
+img {
+	 width: 100%;
+}
+
+nav a:hover {
+	color: #333;
+	background: #fff;
+}
+
+.landing-main{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.landing-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 4.0em;
+}
+
+article {
+	
+	margin: 0px auto;
+	width: 90%;
+	height: auto;
+}
+
+
+
+article > h1 {
+	font-size: 2.6em;
+}
+
+article > p {
+	font-size: 1.6em;
+}
+
+/*aside {
+	float: right;
+	margin: 0px 0px 0px 40px;
+	width: 30%;
+	height: 450px;
+	background: red;
+	height: auto;
+}
+
+aside > h1 {
+	color: black;
+	margin: 20px 0px 0px 20px;
+	font-size: 2.4em;
+}
+
+aside > p {
+	color: black;
+	font-size: 1.6em;
+	padding: 10px;
+	margin: 20px;
+
+} */
+
+
+.tour-dates li {
+	display: inline;
+	float: left;
+	margin: 1%;
+	color: #fff;
+	background: black;
+	padding: 0px 20px 5px 20px;
+	font-size: 130%;
+	text-align: center;
+	line-height: 1em;
+}
+
+.tour-dates li:hover {
+	color: #333;
+	background: #fff;
+}
+
+.footer-wrap {
+	clear: both;
+	width: 100%;
+	height: 3%;
+	background: black;
+	float: left;
+}
+footer {
+	float: right;
+	margin: 1% 5% 1% 2%;
+	overflow: hidden;
+	color: white;
 }
